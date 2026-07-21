@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Char & Co – The Charcoal Kitchen | Bengaluru</title>
+  <meta name="description" content="Char & Co – The Charcoal Kitchen in Bengaluru. Rustic tandoor flavors, bold charcoal-grilled dishes. Order online, make a reservation, or visit us at HRBR Layout, Kalyan Nagar." />
+  <meta name="keywords" content="char and co, charcoal kitchen, bengaluru restaurant, tandoor, kebab, HRBR Layout, Kalyan Nagar, grilled food" />
+  <meta property="og:title" content="Char & Co – The Charcoal Kitchen" />
+  <meta property="og:description" content="Bold charcoal-grilled flavors in the heart of Bengaluru. Reserve your table or order online." />
+  <meta property="og:type" content="restaurant" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="nav-header" id="nav-header" role="banner">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Char & Co home">
+        <span class="logo-char">Char</span><span class="logo-amp">&</span><span class="logo-co">Co</span>
+        <span class="logo-sub">The Charcoal Kitchen</span>
+      </a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+          <li><a href="#menu" class="nav-link" data-section="menu">Menu</a></li>
+          <li><a href="https://bookings.airmenus.in/charandco/order" class="nav-link nav-link--reserve" target="_blank" rel="noopener">Reserve</a></li>
+          <li><a href="#location" class="nav-link" data-section="location">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <!-- Parallax layers -->
+    <div class="hero__bg-layer hero__bg-layer--base" aria-hidden="true"></div>
+    <div class="hero__bg-layer hero__bg-layer--smoke" id="smoke-layer" aria-hidden="true"></div>
+
+    <!-- Ember particle canvas -->
+    <canvas class="hero__particles" id="ember-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero__content">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Bengaluru's Charcoal Kitchen</p>
+        <h1 class="hero__title">
+          Where Fire<br />
+          <em>Meets Flavor</em>
+        </h1>
+        <p class="hero__desc">
+          Bold tandoor aromas. Slow-kissed charcoal. Every dish tells a story of ember and spice.
+        </p>
+        <div class="hero__actions">
+          <a href="https://bookings.airmenus.in/charandco/order" class="btn btn--primary" target="_blank" rel="noopener" id="hero-reserve-btn">
+            <span class="btn__icon">🔥</span> Reserve a Table
+          </a>
+          <a href="#menu" class="btn btn--ghost" id="hero-menu-btn">
+            Explore Menu
+          </a>
+        </div>
+        <div class="hero__meta">
+          <span class="hero__badge">
+            <span class="badge-dot"></span> Open Today · 12:30 PM – 11 PM
+          </span>
+        </div>
+      </div>
+
+      <div class="hero__image-wrap" aria-hidden="true">
+        <div class="hero__image-frame">
+          <img src="hero_food.png" alt="Charcoal grilled tandoor platter at Char & Co" class="hero__food-img" loading="eager" fetchpriority="high" />
+          <div class="hero__image-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       USP / WHY CHAR & CO
+  ============================================================ -->
+  <section class="why-section" id="why" aria-label="Why Char and Co">
+    <div class="section-container">
+      <div class="section-label">Our Philosophy</div>
+      <h2 class="section-title">Why Char <span class="amp">&</span> Co?</h2>
+
+      <div class="why-grid">
+        <div class="why-card reveal-card" data-delay="0">
+          <div class="why-card__icon">🔥</div>
+          <h3 class="why-card__title">Live Charcoal Grill</h3>
+          <p class="why-card__text">Every dish is kissed by real charcoal — no gas shortcuts. The smoke is part of the flavor.</p>
+        </div>
+        <div class="why-card reveal-card" data-delay="150">
+          <div class="why-card__icon">🌿</div>
+          <h3 class="why-card__title">Fresh Daily Marinade</h3>
+          <p class="why-card__text">Yogurt, spice blends, and herbs — prepped fresh each morning for deep, layered flavor.</p>
+        </div>
+        <div class="why-card reveal-card" data-delay="300">
+          <div class="why-card__icon">🫙</div>
+          <h3 class="why-card__title">House Chutneys & Sides</h3>
+          <p class="why-card__text">Our chutneys and accompaniments are crafted in-house — never jarred, never shortcuts.</p>
+        </div>
+        <div class="why-card reveal-card" data-delay="450">
+          <div class="why-card__icon">🏡</div>
+          <h3 class="why-card__title">Cozy Neighbourhood Feel</h3>
+          <p class="why-card__text">A tucked-away spot in Kalyan Nagar that feels like the best-kept secret in Bengaluru.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SIGNATURE DISH SECTION
+  ============================================================ -->
+  <section class="signature-section" id="signature" aria-label="Signature experience">
+    <div class="section-container signature-layout">
+      <div class="signature-image-wrap reveal-3d" aria-hidden="true">
+        <div class="signature-frame">
+          <img src="signature_dish.png" alt="Char & Co signature charcoal grilled platter" class="signature-img" loading="lazy" />
+          <div class="signature-frame__glow"></div>
+        </div>
+        <div class="signature-badge">Chef's Pick</div>
+      </div>
+      <div class="signature-content">
+        <div class="section-label">The Char Experience</div>
+        <h2 class="section-title">Grilled Over<br /><em>Live Coal</em></h2>
+        <p class="signature-desc">
+          At Char & Co, the tandoor isn't just equipment — it's the soul of the kitchen. Our pits burn through the day, imparting that unmistakable char and smokiness you won't find anywhere else in Bengaluru.
+        </p>
+        <ul class="signature-list">
+          <li><span class="list-dot">◆</span> Slow-marinated proteins, minimum 8 hours</li>
+          <li><span class="list-dot">◆</span> Traditional clay tandoor fired to 450°C</li>
+          <li><span class="list-dot">◆</span> Charcoal sourced from sustainable lychee wood</li>
+          <li><span class="list-dot">◆</span> Zero artificial smoke flavoring — ever</li>
+        </ul>
+        <a href="#menu" class="btn btn--primary" id="sig-menu-btn">See Our Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENU SECTION
+  ============================================================ -->
+  <section class="menu-section" id="menu" aria-label="Menu">
+    <div class="menu-bg-texture" aria-hidden="true"></div>
+    <div class="section-container">
+      <div class="section-label">What We Serve</div>
+      <h2 class="section-title">The Menu</h2>
+      <p class="menu-subtitle">All prices and dishes shown below are editable placeholders — update with your actual menu items and pricing.</p>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" role="tab" aria-selected="true" aria-controls="tab-starters" id="tab-btn-starters">Starters</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-mains" id="tab-btn-mains">Mains</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-breads" id="tab-btn-breads">Breads & Sides</button>
+        <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-drinks" id="tab-btn-drinks">Drinks</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-grid" id="tab-starters" role="tabpanel" aria-labelledby="tab-btn-starters">
+        <div class="menu-card tilt-card" id="menu-card-1">
+          <div class="menu-card__inner">
+            <div class="menu-card__tag">Bestseller</div>
+            <div class="menu-card__emoji">🍢</div>
+            <h3 class="menu-card__name">[Dish Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this charcoal-grilled starter — spices, texture, serving style] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-2">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🔥</div>
+            <h3 class="menu-card__name">[Dish Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this charcoal-grilled starter — spices, texture, serving style] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type nonveg">● Non-Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-3">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🌶️</div>
+            <h3 class="menu-card__name">[Dish Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this charcoal-grilled starter — spices, texture, serving style] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type nonveg">● Non-Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-4">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🥗</div>
+            <h3 class="menu-card__name">[Dish Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this charcoal-grilled starter — spices, texture, serving style] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-5">
+          <div class="menu-card__inner">
+            <div class="menu-card__tag">New</div>
+            <div class="menu-card__emoji">🍗</div>
+            <h3 class="menu-card__name">[Dish Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this charcoal-grilled starter — spices, texture, serving style] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type nonveg">● Non-Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-6">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🧅</div>
+            <h3 class="menu-card__name">[Dish Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this charcoal-grilled starter — spices, texture, serving style] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-grid hidden" id="tab-mains" role="tabpanel" aria-labelledby="tab-btn-mains">
+        <div class="menu-card tilt-card" id="menu-card-m1">
+          <div class="menu-card__inner">
+            <div class="menu-card__tag">Bestseller</div>
+            <div class="menu-card__emoji">🍛</div>
+            <h3 class="menu-card__name">[Main Course Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this main course — rich gravy, spice level, pairing suggestion] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type nonveg">● Non-Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-m2">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🥘</div>
+            <h3 class="menu-card__name">[Main Course Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this main course — rich gravy, spice level, pairing suggestion] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-m3">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🍖</div>
+            <h3 class="menu-card__name">[Main Course Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this main course — rich gravy, spice level, pairing suggestion] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type nonveg">● Non-Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-m4">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🌾</div>
+            <h3 class="menu-card__name">[Main Course Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this main course — rich gravy, spice level, pairing suggestion] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breads & Sides -->
+      <div class="menu-grid hidden" id="tab-breads" role="tabpanel" aria-labelledby="tab-btn-breads">
+        <div class="menu-card tilt-card" id="menu-card-b1">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🫓</div>
+            <h3 class="menu-card__name">[Bread Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description — e.g., butter, garlic, stuffed, plain] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-b2">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🍚</div>
+            <h3 class="menu-card__name">[Rice/Side Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this bread or side dish] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-b3">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🥣</div>
+            <h3 class="menu-card__name">[Raita/Salad Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this accompaniment] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-grid hidden" id="tab-drinks" role="tabpanel" aria-labelledby="tab-btn-drinks">
+        <div class="menu-card tilt-card" id="menu-card-d1">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🥤</div>
+            <h3 class="menu-card__name">[Drink Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this beverage] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-d2">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">🍹</div>
+            <h3 class="menu-card__name">[Drink Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this beverage] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card tilt-card" id="menu-card-d3">
+          <div class="menu-card__inner">
+            <div class="menu-card__emoji">☕</div>
+            <h3 class="menu-card__name">[Hot Beverage Name] <!-- EDITABLE --></h3>
+            <p class="menu-card__desc">[Description of this beverage] <!-- EDITABLE --></p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹[Price] <!-- EDITABLE --></span>
+              <span class="menu-card__type veg">● Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta-row">
+        <a href="https://bookings.airmenus.in/charandco/order" class="btn btn--primary" target="_blank" rel="noopener" id="menu-order-btn">
+          <span class="btn__icon">📋</span> Order Online
+        </a>
+        <a href="tel:+919739868104" class="btn btn--ghost" id="menu-call-btn">
+          <span class="btn__icon">📞</span> Call to Order
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESERVE / CTA BAND
+  ============================================================ -->
+  <section class="reserve-band" id="reserve" aria-label="Reserve a table">
+    <div class="reserve-band__embers" aria-hidden="true"></div>
+    <div class="section-container reserve-band__inner">
+      <div>
+        <h2 class="reserve-band__title">Ready to Dine?</h2>
+        <p class="reserve-band__sub">Reserve your table online or give us a call — we'd love to have you.</p>
+      </div>
+      <div class="reserve-band__actions">
+        <a href="https://bookings.airmenus.in/charandco/order" class="btn btn--fire" target="_blank" rel="noopener" id="reserve-book-btn">
+          🔥 Book a Table
+        </a>
+        <a href="tel:+919739868104" class="btn btn--call" id="reserve-call-btn">
+          📞 +91 97398 68104
+        </a>
+        <a href="https://wa.me/919739868104?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Char%20%26%20Co" class="btn btn--whatsapp" target="_blank" rel="noopener" id="reserve-whatsapp-btn" aria-label="WhatsApp Char and Co">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LOCATION SECTION
+  ============================================================ -->
+  <section class="location-section" id="location" aria-label="Location and hours">
+    <div class="section-container location-layout">
+
+      <div class="location-info">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">We're in<br /><em>Kalyan Nagar</em></h2>
+
+        <div class="info-card">
+          <div class="info-card__icon">📍</div>
+          <div>
+            <h3 class="info-card__title">Address</h3>
+            <p class="info-card__text">
+              First Floor, Building No. 7, M415,<br />
+              HRBR Layout 2nd Block Extension,<br />
+              Kalyan Nagar, Bengaluru – 560 043
+            </p>
+            <a href="https://maps.google.com/?q=Char+%26+Co+Charcoal+Kitchen+Kalyan+Nagar+Bengaluru" class="info-link" target="_blank" rel="noopener" id="directions-link">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card__icon">🕐</div>
+          <div>
+            <h3 class="info-card__title">Hours</h3>
+            <div class="hours-table">
+              <div class="hours-row">
+                <span class="hours-day">Wednesday – Monday</span>
+                <span class="hours-time open">12:30 PM – 11:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Tuesday</span>
+                <span class="hours-time closed">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card__icon">📞</div>
+          <div>
+            <h3 class="info-card__title">Contact</h3>
+            <a href="tel:+919739868104" class="info-link info-link--phone" id="location-call-btn">+91 97398 68104</a>
+            <br />
+            <a href="https://www.instagram.com/charandco.bangalore" class="info-link" target="_blank" rel="noopener" id="instagram-link">@charandco.bangalore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="location-map">
+        <div class="map-wrapper">
+          <iframe
+            title="Char & Co location on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.435!2d77.648!3d13.014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17f91b1c7fdd%3A0x0!2sHRBR+Layout+2nd+Block+Extension%2C+Kalyan+Nagar%2C+Bengaluru%2C+Karnataka+560043!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="map-actions">
+          <a href="tel:+919739868104" class="btn btn--primary map-btn" id="map-call-btn">
+            <span class="btn__icon">📞</span> Call Now
+          </a>
+          <a href="https://wa.me/919739868104?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Char%20%26%20Co" class="btn btn--whatsapp map-btn" target="_blank" rel="noopener" id="map-whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="section-container footer__inner">
+        <div class="footer__brand">
+          <div class="footer-logo">
+            <span class="logo-char">Char</span><span class="logo-amp">&</span><span class="logo-co">Co</span>
+          </div>
+          <p class="footer__tagline">The Charcoal Kitchen · Bengaluru</p>
+          <a href="https://www.instagram.com/charandco.bangalore" class="footer__insta" target="_blank" rel="noopener" id="footer-instagram-link" aria-label="Char and Co Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            @charandco.bangalore
+          </a>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__links-title">Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="https://bookings.airmenus.in/charandco/order" target="_blank" rel="noopener">Reserve Online</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h3 class="footer__links-title">Contact</h3>
+          <p><a href="tel:+919739868104">+91 97398 68104</a></p>
+          <p class="footer__hours">Wed–Mon: 12:30 PM – 11 PM<br />Tuesday: Closed</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="section-container">
+        <p>© 2025 Char & Co – The Charcoal Kitchen. All rights reserved. · Bengaluru, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTAs -->
+  <div class="floating-ctas" aria-label="Quick contact actions">
+    <a href="tel:+919739868104" class="floating-btn floating-btn--call" id="float-call-btn" aria-label="Call Char and Co">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+    <a href="https://wa.me/919739868104?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Char%20%26%20Co" class="floating-btn floating-btn--whatsapp" id="float-whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Char and Co">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="https://bookings.airmenus.in/charandco/order" class="floating-btn floating-btn--reserve" id="float-reserve-btn" target="_blank" rel="noopener" aria-label="Reserve a table">
+      🔥
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
